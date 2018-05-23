@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+荣誉时刻
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/service.css' %}" type="text/css" media="all">
+{% endblock %}
+
+{% block content %}
+<div style="padding:133px 0 0 0"></div>
+<br>
+<div id="product">
+    <div class="chunk row">
+        <div class="container chunk-intro sentiment">
+            <div class="image"></div>
+            <div class="intro">
+                <dl>
+                    <dt>情感分析<span class="translate">Sentiment Analysis</span></dt>
+                    <dd>情感分析指的是对文本中情感的倾向性和评价对象进行提取的过程。</dd>
+                    <dd>玻森NLP情感引擎提供行业领先的篇章级情感分析。基于上百万条社交网络平衡语料和数十万条新闻平衡语料的机器学习模型，结合自主开发的半监督学习技术，正负面情感分析准确度达到80%~85%
+                        。经过行业数据标注学习后准确率可达85%~90%。
+                    </dd>
+                </dl>
+                <div class="buy-button">
+                    <a class="popup-with-zoom-anim" href="#small-dialog">Buy »</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chunk row bg-fff">
+        <div class="container chunk-intro classification">
+            <div class="small image"></div>
+            <div class="intro">
+                <dl>
+                    <dt>信息分类<span class="translate">Classification</span></dt>
+                    <dd>文本信息分类将文本按照预设的分类体系进行自动区分。</dd>
+                    <dd>玻森提供定制的文本分类API服务，有着广泛的商业应用前景。</dd>
+                    <dd>例如，通过社交网络挖掘商业情报和潜在销售机会，企业内文本数据分析，海量数据筛选，资讯分类和自动标签预测等。
+                    </dd>
+                    <dd>基于玻森自主研发的语义联想、句法分析等技术，通过半监督学习引擎的训练，只需要进行少量的代表性数据标注，就可以达到商用级别的预测准确率。</dd>
+                </dl>
+                <div class="buy-button">
+                    <a class="popup-with-zoom-anim" href="#small-dialog">Buy »</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chunk row">
+        <div class="container chunk-intro ner">
+            <div class="small image"></div>
+            <div class="intro">
+                <dl>
+                    <dt>实体识别<span class="translate">Named Entity Recognition</span></dt>
+                    <dd>实体识别用于从文本中发现有意义的信息，例如人名、公司名、产品名、时间、地点等。 实体识别是语义分析中的重要的基础，是情感分析、机器翻译、语义理解等任务中的重要步骤。</dd>
+                    <dd>BosonNLP实体识别引擎基于自主研发的结构化信息抽取算法，F1分数达到81%，相比于StanfordNER高出7个百分点。通过对行业语料的进一步学习，可以达到更高的准确率。
+                    </dd>
+                </dl>
+                <div class="buy-button">
+                    <a class="popup-with-zoom-anim" href="#small-dialog">Buy »</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chunk row bg-fff">
+        <div class="container chunk-intro extraction">
+            <div class="image"></div>
+            <div class="intro">
+                <dl>
+                    <dt>典型意见<span class="translate">Opinion Extraction</span></dt>
+                    <dd>典型意见引擎将消费者意见进行单句级别的语义聚合，提取出有代表性的意见。可用于消费者调研、电商点评分析和社会热点事件的意见整理。</dd>
+                    <dd>基于语义的分析引擎在准确率上有较大的突破，能将含义接近但表述不同的意见聚合在一起，并可通过参数调节聚类的大小获得更好的效果，与人工整理相比更加快速、准确 。</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="chunk row">
+        <div class="container chunk-intro clustering">
+            <div class="small image"></div>
+            <div class="intro">
+                <dl>
+                    <dt>文本聚类<span class="translate">Clustering</span></dt>
+                    <dd>相似文本聚类指的是机器自动对给定的文本进行话题聚类，将语义上相似的内容归为一类，有助于海量文档、资讯的整理，和话题级别的统计分析。</dd>
+                    <dd>玻森自主研发的文本聚类算法：</dd>
+                    <dd class="icon-row"><span class="icon book"></span>一方面加入了对语义的扩展，保证同一个意见的不同表述可以被归纳在一起。</dd>
+                    <dd class="icon-row"><span class="icon proket"></span>另一方面又避免了传统的K-means等算法需要预先设定聚类总数的困难，基于数据的分布自动选择合适的阈值。
+                    </dd>
+                </dl>
+                <div class="buy-button">
+                    <a class="popup-with-zoom-anim" href="#small-dialog">Buy »</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chunk row bg-fff">
+        <div class="container chunk-intro keyword">
+            <div class="image"></div>
+            <div class="intro">
+                <dl>
+                    <dt>关键词提取<span class="translate">Keyword Extraction</span></dt>
+                    <dd>关键词提取引擎从一篇或多篇文本中提取出有代表性的关键词。</dd>
+                    <dd>玻森的关键词提取技术综合考虑词语在文本中的频率，和词语在千万级背景数据中的频率，选择出最具有代表性的关键词并给出相应权重。</dd>
+                </dl>
+                <div class="buy-button">
+                    <a class="popup-with-zoom-anim" href="#small-dialog">Buy »</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

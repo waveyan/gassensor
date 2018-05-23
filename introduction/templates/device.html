@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+智能设备
+{% endblock %}
+
+{% block content %}
+<div style="padding:133px 0 0 0"></div><br>
+<div class="service">
+    <div class="container">
+        <div class="service_grids">
+            <div class="col-md-3 service_grid1">
+                <img src="{% static 'images/serv1.jpg' %}" alt="service1"/>
+            </div>
+            <div class="col-md-3 service_grid2">
+                <h3>Business Strategy</h3>
+                <p>Nulla facilisi. Proin vel commodo leo. Ut mauris tortor, cursus ut massa vitae, iaculis vehicula
+                    turpis. Nam libero tempor.</p>
+                <div class="read">
+                    <a href="#" data-toggle="modal" data-target="#myModal">Read more »</a>
+                </div>
+            </div>
+            <div class="col-md-3 service_grid1">
+                <img src="{% static 'images/serv3.jpg' %}" alt="service2"/>
+            </div>
+            <div class="col-md-3 service_grid2">
+                <h3>Financial Solutions</h3>
+                <p>Nulla facilisi. Proin vel commodo leo. Ut mauris tortor, cursus ut massa vitae, iaculis vehicula
+                    turpis. Nam libero tempor.</p>
+                <div class="read">
+                    <a href="#" data-toggle="modal" data-target="#myModal">Read more »</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-3 service_grid2">
+                <h3>Business Solutions</h3>
+                <p>Nulla facilisi. Proin vel commodo leo. Ut mauris tortor, cursus ut massa vitae, iaculis vehicula
+                    turpis. Nam libero tempor.</p>
+                <div class="read">
+                    <a href="#" data-toggle="modal" data-target="#myModal">Read more »</a>
+                </div>
+            </div>
+            <div class="col-md-3 service_grid1">
+                <img src="{% static 'images/serv2.jpg' %}" alt="service1"/>
+            </div>
+            <div class="col-md-3 service_grid2">
+                <h3>24/7 Support</h3>
+                <p>Nulla facilisi. Proin vel commodo leo. Ut mauris tortor, cursus ut massa vitae, iaculis vehicula
+                    turpis. Nam libero tempor.</p>
+                <div class="read">
+                    <a href="#" data-toggle="modal" data-target="#myModal">Read more »</a>
+                </div>
+            </div>
+            <div class="col-md-3 service_grid1">
+                <img src="{% static 'images/serv4.jpg' %}" alt="service2"/>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div><br>
+<!-- //services -->
+
+
+<!-- counter -->
+<div class="services-bottom stats">
+    <div class="banner-dott1">
+        <div class="container">
+            <h3 class="heading">应用统计</h3>
+            <div class="wthree-agile-counter">
+                <div class="col-md-3 w3_agile_stats_grid-top">
+                    <div class="w3_agile_stats_grid">
+                        <div class="agile_count_grid_left">
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                        </div>
+                        <div class="agile_count_grid_right">
+                            <p class="counter">324</p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <h4>Best clients</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 w3_agile_stats_grid-top">
+                    <div class="w3_agile_stats_grid">
+                        <div class="agile_count_grid_left">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        </div>
+                        <div class="agile_count_grid_right">
+                            <p class="counter">543</p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <h4>Happy Customers</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 w3_agile_stats_grid-top">
+                    <div class="w3_agile_stats_grid">
+                        <div class="agile_count_grid_left">
+                            <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+                        </div>
+                        <div class="agile_count_grid_right">
+                            <p class="counter">434</p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <h4>Projects Worked</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 w3_agile_stats_grid-top">
+                    <div class="w3_agile_stats_grid">
+                        <div class="agile_count_grid_left">
+                            <span class="fa fa-trophy" aria-hidden="true"></span>
+                        </div>
+                        <div class="agile_count_grid_right">
+                            <p class="counter">234</p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <h4>Winning Awards</h4>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //counter -->
+
+<!-- bootstrap-modal-pop-up -->
+<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                Corporation
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="{% static 'images/banner1.jpg' %}" alt=" " class="img-responsive"/>
+                <p>Ut enim ad minima veniam, quis nostrum
+                    exercitationem ullam corporis suscipit laboriosam,
+                    nisi ut aliquid ex ea commodi consequatur? Quis autem
+                    vel eum iure reprehenderit qui in ea voluptate velit
+                    esse quam nihil molestiae consequatur, vel illum qui
+                    dolorem eum fugiat quo voluptas nulla pariatur.
+                    <i>" Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                        esse quam nihil molestiae consequatur.</i></p>
+                <div class="buy-button" align="center">
+                    <a class="popup-with-zoom-anim" href="#small-dialog">Buy »</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //bootstrap-modal-pop-up -->
+{% endblock %}
+
